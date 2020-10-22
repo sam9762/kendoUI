@@ -1,4 +1,4 @@
-<!-- <div class="row example-config">
+<div class="row example-config">
 <button #anchor (click)="toggle()" class="k-button">{{toggleText}} Popup</button>
 <kendo-popup #popup [anchor]="anchor" popupClass="content" *ngIf="show">
   <div class="row example-config">
@@ -19,8 +19,7 @@
 <br>
 <div>
 <kendo-grid [data]="gridData" [filterable] = 'true' 
-(edit)="editHandler($event)" (cancel)="cancelHandler($event)"
-(save)="saveHandler($event)" (remove)="removeHandler($event)">
+>
   <kendo-grid-column field="CompanyName" title="Company Name" *ngIf="!isHidden('CompanyName')">
   </kendo-grid-column>
   <kendo-grid-column field="ContactName" title="Contact Name" *ngIf="!isHidden('ContactName')">
@@ -36,8 +35,8 @@
     </ng-template>
 </kendo-grid-command-column>
 </kendo-grid>
-</div> -->
-<kendo-grid
+</div>
+<!-- <kendo-grid
           [data]="view | async"
           [height]="533"
           [pageSize]="gridState.take" [skip]="gridState.skip" [sort]="gridState.sort"
@@ -63,4 +62,4 @@
                 <button kendoGridCancelCommand>{{ isNew ? 'Discard changes' : 'Cancel' }}</button>
             </ng-template>
         </kendo-grid-command-column>
-      </kendo-grid>
+      </kendo-grid> -->
